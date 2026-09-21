@@ -1,0 +1,46 @@
+﻿================================================================================
+  HOW TO REMOVE '.netlify.app' FROM YOUR WEBSITE URL FOR 100% FREE (₹0 COST!)
+================================================================================
+
+You currently have:  https://georgejosephportfolio.netlify.app/
+You want a URL like: https://georgejoseph.tech  or  https://georgejoseph.me  (NO .netlify.app!)
+
+Here are the 3 best 100% FREE ways to remove '.netlify.app' without spending any money:
+
+--------------------------------------------------------------------------------
+METHOD 1: Get 100% FREE Custom Domain (.tech / .me) via Student Pack (RECOMMENDED)
+--------------------------------------------------------------------------------
+As a student at College of Engineering Chengannur, you get a FREE custom domain 
+(like 'georgejoseph.tech' or 'georgejoseph.me') for ₹0 cost!
+
+1. Go to: https://education.github.com/pack
+2. Sign in with your GitHub account and click 'Get Student Benefits'.
+3. Submit your college ID card or college email.
+4. Once verified, claim your FREE 1-year .tech domain from Namecheap!
+5. In Netlify (https://app.netlify.com):
+   - Go to your site -> Site Settings -> Domain Management -> Add Custom Domain.
+   - Type 'georgejoseph.tech'.
+   - Change your Nameservers in Namecheap to Netlify's nameservers.
+6. RESULT: Your website is now live at https://georgejoseph.tech with NO .netlify.app!
+
+--------------------------------------------------------------------------------
+METHOD 2: 100% Free Developer Domain (.is-a.dev)
+--------------------------------------------------------------------------------
+You can get a free developer domain like https://georgejoseph.is-a.dev 100% free forever!
+
+1. Go to: https://is-a.dev
+2. Follow the 1-minute setup to claim 'georgejoseph.is-a.dev'.
+3. Point it to Netlify or GitHub Pages!
+
+--------------------------------------------------------------------------------
+METHOD 3: Use GitHub Pages (.github.io)
+--------------------------------------------------------------------------------
+Host your portfolio on GitHub Pages for a clean address:
+👉 https://georgejoseph1239-bot.github.io
+
+1. Create a repository named 'georgejoseph1239-bot.github.io' on GitHub.
+2. Upload your portfolio files.
+3. Turn on GitHub Pages under Repository Settings -> Pages.
+4. RESULT: Live at https://georgejoseph1239-bot.github.io with NO .netlify.app!
+
+================================================================================

@@ -1,0 +1,50 @@
+﻿================================================================================
+  HOW TO CONVERT YOUR PORTFOLIO TO A CUSTOM DOMAIN WEBSITE (e.g. georgejoseph.tech)
+================================================================================
+
+A Custom Domain gives you an official personal website URL like:
+  👉 https://georgejoseph.tech
+  👉 https://georgejoseph.in
+  👉 https://georgejoseph.com
+
+Here is the exact step-by-step guide to get your custom domain in 3 minutes:
+
+--------------------------------------------------------------------------------
+STEP 1: GET YOUR CUSTOM DOMAIN NAME (Free or ~-/year)
+--------------------------------------------------------------------------------
+Option A (100% FREE for College Students):
+  - Since you are a B.Tech student at College of Engineering Chengannur, you get 
+    a FREE .tech or .me domain name for 1 year through the GitHub Student Developer Pack!
+  - Go to: https://education.github.com/pack -> Claim free .tech domain on Namecheap.
+
+Option B (Buying a Domain for ~- / ₹99):
+  - Go to https://www.namecheap.com or https://www.hostinger.in or https://www.godaddy.com
+  - Search for your name (e.g. 'georgejoseph.tech', 'georgejoseph.in', 'georgejoseph.dev')
+  - Purchase it (usually ₹99 - ₹199 per year).
+
+--------------------------------------------------------------------------------
+STEP 2: LINK IT TO YOUR WEBSITE (100% FREE HOSTING)
+--------------------------------------------------------------------------------
+
+IF YOU HOST ON NETLIFY (Easiest Method):
+  1. Log into your Netlify dashboard: https://app.netlify.com
+  2. Click your portfolio site → Click 'Domain Management' → 'Add a custom domain'.
+  3. Enter your domain (e.g. 'georgejoseph.tech') and click Save.
+  4. Copy the 4 Netlify Nameservers shown (e.g. dns1.p01.nsone.net).
+  5. Go to your domain registrar (Namecheap/GoDaddy) → Domain Settings → Nameservers → 
+     Select 'Custom DNS' and paste the 4 Netlify nameservers!
+  6. DONE! Netlify will issue a FREE SSL Security Certificate (HTTPS) automatically!
+
+IF YOU HOST ON GITHUB PAGES:
+  1. Open your repository on GitHub: https://github.com/georgejoseph1239-bot/georgejoseph1239-bot.github.io
+  2. Click 'Settings' → 'Pages'.
+  3. Under 'Custom domain', enter your domain (e.g. 'georgejoseph.tech') and click Save.
+  4. Check the box 'Enforce HTTPS'.
+  5. In your domain provider (Namecheap/GoDaddy), add these DNS Records:
+     - Type: A Record | Host: @ | Value: 185.199.108.153
+     - Type: A Record | Host: @ | Value: 185.199.109.153
+     - Type: A Record | Host: @ | Value: 185.199.110.153
+     - Type: A Record | Host: @ | Value: 185.199.111.153
+     - Type: CNAME    | Host: www | Value: georgejoseph1239-bot.github.io
+
+================================================================================

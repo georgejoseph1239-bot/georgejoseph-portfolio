@@ -1,0 +1,20 @@
+﻿============================================================
+  HOW TO CHANGE / UPDATE THE PATENT LOGO / SEAL
+============================================================
+
+To change the Patent Logo image on your portfolio website:
+
+METHOD 1 (Easiest - Using photos folder):
+  1. Prepare your new patent logo/seal image.
+  2. Name it 'patent_logo.png' (or 'patent_logo.jpg').
+  3. Replace the file inside the 'photos' folder:
+     GeorgePortfolio/photos/patent_logo.png
+  4. Refresh your website in your browser!
+
+METHOD 2 (Using CHANGE_PATENT_LOGO folder):
+  1. Put your new image in this 'CHANGE_PATENT_LOGO' folder.
+  2. Copy it into the 'photos' folder as 'patent_logo.png'.
+
+Supported Formats: .png, .jpg, .svg, .webp
+Optimal Dimensions: Square image (e.g., 500x500 px or 800x800 px) with transparent or dark background.
+============================================================

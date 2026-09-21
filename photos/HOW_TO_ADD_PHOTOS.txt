@@ -1,0 +1,2 @@
+﻿Drop your hero photo as: photos\hero_photo.jpg
+Drop your about photo as: photos\about_photo.jpg

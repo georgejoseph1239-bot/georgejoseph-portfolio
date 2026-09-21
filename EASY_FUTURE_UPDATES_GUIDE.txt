@@ -1,0 +1,51 @@
+﻿================================================================================
+  HOW TO ADD PROJECTS, EXPERIENCES & PHOTOS IN THE FUTURE (EASY GUIDE)
+================================================================================
+
+You can easily update your website at any time without needing any AI assistance!
+
+--------------------------------------------------------------------------------
+1. HOW TO CHANGE YOUR PROFILE PHOTOS:
+--------------------------------------------------------------------------------
+- Hero Section Photo (Main Circle on Home Page):
+  Replace the image in: GeorgePortfolio/photos/hero_photo.jpg
+
+- About Me Section Photo (Page 2 Photo Box):
+  Replace the image in: GeorgePortfolio/photos/about_photo.jpg
+
+- Patent Seal / Logo:
+  Replace the image in: GeorgePortfolio/photos/patent_logo.png
+
+--------------------------------------------------------------------------------
+2. HOW TO UPDATE YOUR RESUME / CV:
+--------------------------------------------------------------------------------
+Replace the PDF file in:
+GeorgePortfolio/resume/George_Joseph_Resume.pdf
+
+--------------------------------------------------------------------------------
+3. HOW TO ADD A NEW PROJECT:
+--------------------------------------------------------------------------------
+1. Open 'ADD_NEW_PROJECT/PROJECT_TEMPLATE.txt'.
+2. Copy the text block.
+3. Open 'index.html' in Notepad.
+4. Search for: <!-- NEW PROJECTS COMING SOON -->
+5. Paste your copied project block right ABOVE that line!
+6. Edit the Title, Description, and Tech Stack tags in Notepad and save!
+
+--------------------------------------------------------------------------------
+4. HOW TO ADD A NEW EXPERIENCE / INTERNSHIP:
+--------------------------------------------------------------------------------
+1. Open 'ADD_EXPERIENCE/EXPERIENCE_TEMPLATE.txt'.
+2. Copy the text block.
+3. Open 'index.html' in Notepad, search for: <!-- ADD EXPERIENCE -->
+4. Paste the block, fill in Company Name & Role, and save!
+
+--------------------------------------------------------------------------------
+5. HOW TO ADD A NEW ACHIEVEMENT / AWARD:
+--------------------------------------------------------------------------------
+1. Open 'ADD_ACHIEVEMENT/ACHIEVEMENT_TEMPLATE.txt'.
+2. Copy the text block.
+3. Open 'index.html' in Notepad, search for: <!-- UPCOMING ACHIEVEMENTS -->
+4. Paste the block right ABOVE that line, fill in Award Name & Year, and save!
+
+================================================================================

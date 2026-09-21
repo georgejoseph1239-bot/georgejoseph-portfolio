@@ -1,0 +1,44 @@
+﻿================================================================================
+  HOW TO PUBLISH YOUR WEBSITE TO THE WORLD (NO GIT REQUIRED!)
+================================================================================
+
+You can host your portfolio website on the internet for FREE with a custom link
+in less than 30 seconds WITHOUT using Git or command line!
+
+--------------------------------------------------------------------------------
+METHOD 1: Netlify Drag & Drop (RECOMMENDED - 30 SECONDS)
+--------------------------------------------------------------------------------
+1. Open your web browser (Chrome, Edge, Firefox) and go to:
+   👉 https://app.netlify.com/drop
+
+2. Sign up or log in for a free account (takes 10 seconds).
+
+3. Open File Explorer on your PC, locate your 'GeorgePortfolio' folder:
+   C:\Users\HP\Desktop\GeorgePortfolio
+
+4. Drag the ENTIRE 'GeorgePortfolio' folder and drop it into the Netlify box in your browser!
+
+5. DONE! Netlify will instantly build your site and give you a live link like:
+   https://george-joseph-portfolio.netlify.app
+
+6. TO CHANGE THE WEBSITE NAME / CUSTOM DOMAIN:
+   - Go to Site Settings → Change Site Name → type 'georgejoseph'
+   - Your site URL is now: https://georgejoseph.netlify.app !
+   - If you buy a domain like 'georgejoseph.com' or 'georgejoseph.in', you can attach it in 1 click!
+
+--------------------------------------------------------------------------------
+METHOD 2: Vercel Drag & Drop (FREE & FAST)
+--------------------------------------------------------------------------------
+1. Go to: https://vercel.com
+2. Sign up FREE with your Google or GitHub account.
+3. Click "Add New" → "Project" → Drag and drop your 'GeorgePortfolio' folder.
+4. Click "Deploy". Your website is live instantly on https://georgejoseph.vercel.app !
+
+--------------------------------------------------------------------------------
+METHOD 3: Tiiny Host (EASIEST 1-CLICK ZIP UPLOAD)
+--------------------------------------------------------------------------------
+1. Zip your 'GeorgePortfolio' folder into a .zip file.
+2. Go to: https://tiiny.host
+3. Upload the .zip file, type your desired link name (e.g. 'georgejoseph'), and click Launch!
+
+================================================================================

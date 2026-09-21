@@ -1,0 +1,42 @@
+﻿============================================================
+  HOW TO ADD A NEW PROJECT
+============================================================
+
+STEP 1: Open index.html in Notepad (right-click → Open with → Notepad)
+STEP 2: Press Ctrl+F and search for:  <!-- ADD MORE -->
+STEP 3: Click just ABOVE that line and paste this template:
+
+<!--  *** YOUR PROJECT TITLE *** -->
+<div class="project-card" data-aos="fade-up" data-aos-delay="150" id="project-CHANGE_THIS_ID">
+  <div class="project-img-area">
+    <div class="project-icon-svg">
+      <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="16"></line>
+        <line x1="8" y1="12" x2="16" y2="12"></line>
+      </svg>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3 class="project-title">YOUR PROJECT TITLE</h3>
+    <h4 class="project-subtitle">Short Tagline / Type of Project</h4>
+    <p class="project-desc">Write 2-3 sentences about the project here.</p>
+    <ul class="project-features">
+      <li>Key feature 1</li>
+      <li>Key feature 2</li>
+      <li>Key feature 3</li>
+    </ul>
+    <br>
+    <div class="project-tags">
+      <span class="ptag">Technology 1</span>
+      <span class="ptag">Technology 2</span>
+    </div>
+    <div class="project-footer">
+      <span class="project-status completed">Completed</span>
+    </div>
+  </div>
+</div>
+
+NOTE: Change "CHANGE_THIS_ID" to something unique like "project-mycoolapp"
+NOTE: For ongoing projects, change "completed" to "ongoing" in the status badge
+============================================================

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George Joseph | Embedded Engineer &amp; Frontend Developer</title>
+  <meta name="description" content="Portfolio of George Joseph - Embedded Design Engineer, Frontend Developer, VLSI Enthusiast and IoT Innovator from Kerala, India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- EmailJS SDK for real-time contact form -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){ emailjs.init({ publicKey: 'YOUR_EMAILJS_PUBLIC_KEY' }); })();
+  </script>
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">GJ</span>
+        <span class="logo-dot"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero"         class="nav-link active">Home</a></li>
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#skills"       class="nav-link">Skills</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#patent"       class="nav-link">Patent</a></li>
+        <li><a href="#experience"   class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Awards</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero"         class="mobile-link">Home</a></li>
+      <li><a href="#about"        class="mobile-link">About</a></li>
+      <li><a href="#skills"       class="mobile-link">Skills</a></li>
+      <li><a href="#projects"     class="mobile-link">Projects</a></li>
+      <li><a href="#patent"       class="mobile-link">Patent</a></li>
+      <li><a href="#experience"   class="mobile-link">Experience</a></li>
+      <li><a href="#achievements" class="mobile-link">Awards</a></li>
+      <li><a href="#contact"      class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+
+      <div class="hero-photo-wrapper" data-aos="zoom-in">
+        <div class="photo-ring ring1"></div>
+        <div class="photo-ring ring2"></div>
+        <div class="photo-ring ring3"></div>
+        <div class="hero-photo" id="heroPhotoBox">
+          <img src="photos/hero_photo.jpg" alt="George Joseph" id="heroPhoto" onerror="handleHeroImgError(this)" />
+        </div>
+        <div class="photo-badge">Patent Filed</div>
+      </div>
+
+      <div class="hero-text" data-aos="fade-up">
+        <div class="hero-greeting">Hello, I am</div>
+        <h1 class="hero-name">
+          <span class="name-part">George</span><span class="name-part highlight"> Joseph</span>
+        </h1>
+        <div class="hero-roles">
+          <span class="role-prefix">I am a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          B.Tech ECE student at College of Engineering Chengannur &nbsp;|&nbsp;
+          Embedded Systems &amp; VLSI enthusiast &nbsp;|&nbsp;
+          IoT Innovator with a <strong>patent-filed</strong> Power Quality Analyzer &nbsp;|&nbsp;
+          Frontend Developer &amp; App Designer
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary"  id="viewProjectsBtn">View Projects</a>
+          <a href="#contact"  class="btn btn-outline"  id="hireMeBtn">Hire Me</a>
+          <a href="resume/George_Joseph_Resume.pdf" target="_blank" class="btn btn-ghost" id="downloadResumeBtn">View Resume</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Major Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="1">0</span>
+            <span class="stat-label">Patent Filed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="1">0</span>
+            <span class="stat-label">Internship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <div class="about-photo-box" id="aboutPhotoBox">
+              <img src="photos/about_photo.jpg" alt="George Joseph" id="aboutPhoto"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-img')" />
+            </div>
+            <div class="about-img-overlay">
+              <div class="overlay-card">ECE Engineer</div>
+            </div>
+          </div>
+
+          <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+            <h4>Education</h4>
+            <div class="edu-item">
+              <div class="edu-year">2022 - 2026</div>
+              <div class="edu-details">
+                <strong>B.Tech - Electronics &amp; Communication Eng.</strong>
+                <span>College of Engineering Chengannur</span>
+                <span>APJ Abdul Kalam Technological University</span>
+                <span>Chengannur, Alappuzha, Kerala</span>
+                <span class="cgpa">CGPA: 7.59 / 10</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2019 - 2021</div>
+              <div class="edu-details">
+                <strong>Senior Secondary</strong>
+                <span>J.J Murphy Memorial HSS, Yendayar</span>
+                <span>Kottayam, Kerala</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col" data-aos="fade-left">
+          <p class="about-intro">
+            I am <strong>George Joseph</strong>, an Electronics and Communication Engineering undergraduate at the <strong>College of Engineering Chengannur, Kerala</strong>, with a strong passion for transforming ideas into practical, technology-driven solutions.
+          </p>
+          <p class="about-body">
+            My interests lie at the intersection of <strong>electronics hardware and software</strong>, with hands-on experience spanning <strong>VLSI design and verification, embedded systems, IoT, and frontend development for web and mobile applications</strong>. I enjoy working across the complete development process&mdash;from understanding hardware and system requirements to designing intuitive software interfaces.
+          </p>
+          <p class="about-body">
+            One of my key projects is the <strong>AI Smart Energy Guardian &mdash; Low-Cost Power Quality Analyzer</strong>, an affordable solution designed to make power-quality monitoring more accessible compared with conventional commercial analyzers. The project combines electronics, embedded systems, data processing, and intelligent monitoring into a single practical platform. <strong>A patent has been filed for the project and is currently under review.</strong>
+          </p>
+          <p class="about-body">
+            I also designed and developed the <strong>complete frontend experience</strong> of the AI Smart Energy Guardian, including its web dashboard and mobile application interface, with a focus on usability, clarity, and effective visualization of technical data.
+          </p>
+          <p class="about-body">
+            Beyond software development, I have a strong interest in <strong>electronics hardware, circuit design, electrical wiring, and hands-on experimentation with real-world components</strong>. I believe the best engineering solutions come from understanding both sides of the system&mdash;what happens in the hardware and how software can make it smarter, more efficient, and easier to use.
+          </p>
+          <p class="about-body">
+            I am continuously exploring new technologies and building projects that strengthen my skills while addressing meaningful real-world problems.
+          </p>
+
+          <div class="interest-tags">
+            <span class="tag">VLSI Design</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Frontend Dev</span>
+            <span class="tag">Mobile App Design</span>
+            <span class="tag">Circuit Design</span>
+            <span class="tag">Electrical Wiring</span>
+            <span class="tag">NILM</span>
+          </div>
+
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/george-joseph-751377255/" target="_blank" class="social-link linkedin" id="linkedinLink">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/georgejoseph1239-bot" target="_blank" class="social-link github" id="githubLink">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-cat-header">
+            <div class="skill-cat-dot"></div>
+            <h3>VLSI &amp; Digital Design</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Verilog HDL</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">VHDL (Basic)</span><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+            <div class="skill-item"><span class="skill-name">RTL Design</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Functional Verification</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+            <div class="skill-item"><span class="skill-name">VLSI Design Flow</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-cat-header">
+            <div class="skill-cat-dot"></div>
+            <h3>Embedded &amp; IoT</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Raspberry Pi 5</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">ADE9000 Energy IC</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SPI Communication</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">IoT System Integration</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Circuit Design</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-header">
+            <div class="skill-cat-dot"></div>
+            <h3>Frontend &amp; App Design</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Web App Design</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Mobile UI Design</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-cat-header">
+            <div class="skill-cat-dot"></div>
+            <h3>Programming &amp; Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">C / C++</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MS Office Suite</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Electrical Wiring</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-stack-section" data-aos="fade-up">
+        <h3 class="tech-stack-title">Tech Stack Used in Projects</h3>
+        <div class="tech-pills">
+          <span class="tech-pill">Raspberry Pi 5</span>
+          <span class="tech-pill">ADE9000 IC</span>
+          <span class="tech-pill">SPI Protocol</span>
+          <span class="tech-pill">HTML / CSS / JS</span>
+          <span class="tech-pill">localhost Web App</span>
+          <span class="tech-pill">Mobile App Interface</span>
+          <span class="tech-pill">NILM Algorithm</span>
+          <span class="tech-pill">IoT Integration</span>
+          <span class="tech-pill">Verilog</span>
+          <span class="tech-pill">VHDL</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">C / C++</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Have Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- MAIN PROJECT -->
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="0" id="project-pqa">
+          <div class="project-badge-top">
+            <span class="badge-patent">Patent Filed</span>
+            <span class="badge-main">Main Project</span>
+          </div>
+          <div class="project-img-area">
+            <div class="project-icon-svg">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="url(#pg1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="rgba(6,182,212,0.05)"></rect>
+                <path d="M9 3v4 M15 3v4 M9 21v-4 M15 21v-4 M3 9h4 M3 15h4 M21 9h-4 M21 15h-4"></path>
+                <path d="M12 8v8 M9 12l3-3 3 3"></path>
+                <defs>
+                  <linearGradient id="pg1" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#06b6d4"/>
+                    <stop offset="100%" stop-color="#3b82f6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-glow"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AI Smart Energy Guardian</h3>
+            <h4 class="project-subtitle">AI-Based Energy Monitoring &amp; Low-Cost Power Quality Analysis System</h4>
+            <div class="project-desc">
+              <p>AI Smart Energy Guardian is an innovative energy monitoring platform that combines Non-Intrusive Load Monitoring (NILM) with a low-cost single-phase and three-phase Power Quality Analyzer. The system is designed to provide intelligent insights into energy consumption and power quality through a unified hardware and software platform.</p>
+              <br>
+              <p>The NILM component enables appliance-level energy monitoring by analyzing overall electrical consumption, helping identify individual appliance usage without requiring dedicated sensors for each appliance. This provides a convenient and scalable approach to understanding energy consumption patterns.</p>
+              <br>
+              <p>The integrated Power Quality Analyzer, developed using Raspberry Pi 5 and the ADE9000 Energy Metering IC, enables real-time monitoring of key electrical parameters including voltage, current, frequency, power factor, energy, and harmonics. The analyzer is designed as a cost-effective alternative to conventional commercial Power Quality Analyzers, which can cost approximately &#8377;5&ndash;8 lakh.</p>
+              <br>
+              <p>The project brings together AI-based energy analysis, power-quality monitoring, embedded systems, and modern software interfaces to create an affordable and practical solution for intelligent energy management.</p>
+            </div>
+            
+            <div class="featured-body">
+              <div class="featured-block" style="grid-column: span 2;">
+                <h5>Key Features</h5>
+                <ul class="project-features">
+                  <li>NILM-based appliance-level energy monitoring</li>
+                  <li>Single-phase and three-phase Power Quality Analysis</li>
+                  <li>Real-time monitoring of voltage, current, frequency, power factor, energy, and harmonics</li>
+                  <li>Raspberry Pi 5 and ADE9000 Energy Metering IC based architecture</li>
+                  <li>SPI-based data acquisition between hardware modules</li>
+                  <li>Real-time web dashboard designed and developed entirely by me</li>
+                  <li>Mobile application interface designed and developed entirely by me</li>
+                  <li>Cost-effective alternative to high-priced commercial power-quality analyzers</li>
+                  <li>Integrated platform combining energy intelligence and power-quality analysis</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="contribution-box">
+              <h5>My Contribution</h5>
+              <p>I designed and developed the complete frontend experience of the project, including the web dashboard and mobile application interface. My work focused on intuitive UI design, real-time data visualization, responsive layouts, and presenting complex energy and power-quality information through a clear and user-friendly interface.</p>
+            </div>
+
+            <div class="project-tags">
+              <span class="ptag">Raspberry Pi 5</span>
+              <span class="ptag">ADE9000</span>
+              <span class="ptag">SPI</span>
+              <span class="ptag">NILM</span>
+              <span class="ptag">HTML/CSS/JS</span>
+              <span class="ptag">IoT</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status ongoing">Ongoing</span>
+              <a href="#patent" class="project-link patent-link">View Patent Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" id="project-iot">
+          <div class="project-img-area">
+            <div class="project-icon-svg">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="url(#pg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="rgba(16,185,129,0.1)"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                <defs>
+                  <linearGradient id="pg2" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#10b981"/>
+                    <stop offset="100%" stop-color="#3b82f6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Smart Energy Guardian</h3>
+            <h4 class="project-subtitle">IoT-Based Energy Monitoring System</h4>
+            <p class="project-desc">
+              A smart IoT system for real-time electricity consumption tracking.
+              Built a dedicated web dashboard displaying consumed energy and cost.
+              Features high consumption alerts and hands-on circuit integration.
+            </p>
+            <ul class="project-features">
+              <li>Real-time IoT energy monitoring</li>
+              <li>Web dashboard (frontend designed by me)</li>
+              <li>High consumption alerts and cost tracking</li>
+              <li>Presented at KSEB &mdash; received appreciation</li>
+            </ul>
+            <br>
+            <div class="project-tags">
+              <span class="ptag">Raspberry Pi</span>
+              <span class="ptag">IoT</span>
+              <span class="ptag">Web Dashboard</span>
+              <span class="ptag">Circuit Design</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status completed">Completed</span>
+            </div>
+          </div>
+        </div>
+
+                <!-- PROJECT 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150" id="project-alu">
+          <div class="project-img-area">
+            <div class="project-icon-svg">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="url(#pg3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="10" rx="2" ry="2" fill="rgba(99,102,241,0.1)"></rect>
+                <line x1="6" y1="7" x2="6" y2="4"></line>
+                <line x1="10" y1="7" x2="10" y2="4"></line>
+                <line x1="14" y1="7" x2="14" y2="4"></line>
+                <line x1="18" y1="7" x2="18" y2="4"></line>
+                <line x1="6" y1="17" x2="6" y2="20"></line>
+                <line x1="10" y1="17" x2="10" y2="20"></line>
+                <line x1="14" y1="17" x2="14" y2="20"></line>
+                <line x1="18" y1="17" x2="18" y2="20"></line>
+                <defs>
+                  <linearGradient id="pg3" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#6366f1"/>
+                    <stop offset="100%" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Digital Logic Simulator</h3>
+            <h4 class="project-subtitle">4-Bit ALU &amp; Circuit Educational Tool</h4>
+            <p class="project-desc">An interactive web-based educational simulator for digital logic &mdash; covering logic gates, truth tables, flip-flops (SR/D/JK/T), a 4-bit binary counter, and a complete 4-bit ALU. Built with C and web technologies.</p>
+            <ul class="project-features">
+              <li>Logic Gate &amp; Truth Table Simulation</li>
+              <li>SR, D, JK &amp; T Flip-Flops</li>
+              <li>Clock/State Simulation</li>
+              <li>4-Bit Binary Counter &amp; 4-Bit ALU</li>
+              <li>Interactive Web Interface</li>
+            </ul>
+            <br>
+            <div class="project-tags">
+              <span class="ptag">C</span>
+              <span class="ptag">HTML/CSS</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">Digital Logic</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status completed">Completed</span>
+              <a href="https://georgejoseph1239-bot.github.io/Digital-Logic-ALU-Simulator/" target="_blank" class="project-link">View Live Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="180" id="project-sec-comm">
+          <div class="project-img-area">
+            <div class="project-icon-svg">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="url(#pg4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="rgba(16,185,129,0.1)"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                <circle cx="12" cy="16" r="1" fill="#10b981"></circle>
+                <defs>
+                  <linearGradient id="pg4" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#10b981"/>
+                    <stop offset="100%" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Secure Digital Communication Simulator</h3>
+            <h4 class="project-subtitle">Encrypted Device-to-Device Wi-Fi Communication &amp; Signal Analysis</h4>
+            <p class="project-desc">A software-based secure communication system demonstrating encrypted message transmission between devices over a local Wi-Fi network, combining digital communication and security concepts.</p>
+            <ul class="project-features">
+              <li>🔒 AES-GCM message encryption &amp; secure decryption</li>
+              <li>📡 Real-time WebSocket communication protocol</li>
+              <li>🌐 Local Wi-Fi device-to-device transmission</li>
+              <li>📊 Signal-to-Noise Ratio (SNR) &amp; Bit Error Rate (BER) analysis</li>
+              <li>💻 Node.js + JavaScript implementation</li>
+            </ul>
+            <br>
+            <div class="project-tags">
+              <span class="ptag">Node.js</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">C</span>
+              <span class="ptag">WebSocket</span>
+              <span class="ptag">AES-GCM</span>
+              <span class="ptag">HTML/CSS</span>
+              <span class="ptag">SNR &amp; BER</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status completed">Completed</span>
+              <a href="https://georgejoseph1239-bot.github.io/Secure-Digital-Communication-Simulator/" target="_blank" class="project-link">View Live Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW PROJECTS COMING SOON -->
+        <div class="project-card add-project coming-soon-card" data-aos="fade-up" data-aos-delay="200" id="project-add">
+          <div class="add-project-inner">
+            <div class="add-icon coming-soon-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#csGlow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"></path>
+                <path d="M9 12l-2 2"></path>
+                <path d="M15 6l2 2"></path>
+                <defs>
+                  <linearGradient id="csGlow" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#fbbf24"/>
+                    <stop offset="100%" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="coming-soon-title">New Projects Coming Soon</h3>
+            <p class="coming-soon-desc">Currently researching and developing new hardware &amp; software innovations. Stay tuned for exciting upcoming releases!</p>
+            <span class="add-label coming-soon-badge">⚡ In Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PATENT ===== -->
+  <section id="patent" class="section patent-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Intellectual Property</span>
+        <h2 class="section-title">Patent <span class="gradient-text">Filing</span></h2>
+      </div>
+
+      <div class="patent-showcase" data-aos="zoom-in">
+        <div class="patent-glow-border">
+          <div class="patent-inner">
+
+            <div class="patent-seal-column">
+              <div class="seal-outer stamp-seal">
+                <img src="photos/patent_logo.png" alt="Patent Application Filed - AI Smart Energy Guardian" class="patent-stamp-img" onerror="this.onerror=null; this.src='assets/patent_stamp.png';" />
+              </div>
+              
+              <div class="seal-info-card">
+                <span class="seal-ip-badge">INTELLECTUAL PROPERTY</span>
+                <h4 class="seal-card-title">Patent Application Filed</h4>
+                <p class="seal-card-sub">AI Smart Energy Guardian</p>
+                
+                <div class="seal-stats-grid">
+                  <div class="seal-stat-item">
+                    <span class="ss-label">FILING YEAR</span>
+                    <span class="ss-val">2026</span>
+                  </div>
+                  <div class="seal-stat-item">
+                    <span class="ss-label">JURISDICTION</span>
+                    <span class="ss-val">IPO India</span>
+                  </div>
+                  <div class="seal-stat-item">
+                    <span class="ss-label">TYPE</span>
+                    <span class="ss-val">Utility Patent</span>
+                  </div>
+                  <div class="seal-stat-item">
+                    <span class="ss-label">STATUS</span>
+                    <span class="ss-val ss-green">Under Review</span>
+                  </div>
+                </div>
+
+                <div class="seal-verify-badge">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Form 1 &amp; Spec Submitted</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="patent-details">
+              <div class="patent-status-badge">
+                <span class="status-dot pulsing"></span>
+                Patent Application Filed &mdash; Currently Under Review
+              </div>
+              <h3 class="patent-title">
+                AI Smart Energy Guardian &mdash; Low-Cost Power Quality Analyzer
+              </h3>
+              <p class="patent-description">
+                AI Smart Energy Guardian is an innovative, cost-effective Power Quality Analyzer built around the Raspberry Pi 5 and ADE9000 Energy Metering IC. The system supports both single-phase and three-phase electrical measurement, enabling real-time monitoring of key parameters including voltage, current, frequency, power factor, energy consumption, and harmonics.
+              </p>
+              <p class="patent-description">
+                The platform also incorporates Non-Intrusive Load Monitoring (NILM) for appliance-level energy analysis, providing intelligent insights into energy consumption without requiring dedicated monitoring hardware for every appliance. The system combines power-quality analysis, energy monitoring, embedded technology, and IoT capabilities within a unified, low-cost platform.
+              </p>
+              <p class="patent-description">
+                Designed as an affordable alternative to conventional commercial Power Quality Analyzers, the system aims to make advanced electrical monitoring significantly more accessible, with potential cost savings of approximately &#8377;5&ndash;8 lakh compared with high-end commercial alternatives.
+              </p>
+              <div class="patent-meta-grid">
+                <div class="patent-meta-item">
+                  <span class="meta-label">Patent Status</span>
+                  <span class="meta-value status-filed">Filed &amp; Under Review</span>
+                </div>
+                <div class="patent-meta-item">
+                  <span class="meta-label">Technology Area</span>
+                  <span class="meta-value">Power Quality Monitoring &bull; Embedded Systems &bull; IoT &bull; Energy Intelligence</span>
+                </div>
+                <div class="patent-meta-item">
+                  <span class="meta-label">Core Innovation</span>
+                  <span class="meta-value">Low-Cost Power Quality Analyzer with NILM-Based Appliance-Level Energy Analysis</span>
+                </div>
+                <div class="patent-meta-item">
+                  <span class="meta-label">Cost Impact</span>
+                  <span class="meta-value">Potential savings of approx. &#8377;5&ndash;8 lakh compared with commercial alternatives</span>
+                </div>
+              </div>
+              <div class="patent-note">
+                <strong>Patent Note:</strong> The patent application has been filed and is currently under examination/review. The project remains subject to the applicable patent process and grant requirements.
+                <br><br>
+                <strong>Note:</strong> Patent applications typically take 2-5 years for full grant after filing. This invention is currently protected under patent application status.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Professional Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">Internship</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right" id="exp-vlsi">
+          <div class="timeline-dot">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>VLSI Design &amp; Verification Intern</h3>
+              <span class="timeline-company">SMEC Automation Pvt. Ltd.</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">June 2025</span>
+              <span class="timeline-sep">&nbsp;|&nbsp;</span>
+              <span class="timeline-location">Kaloor, Ernakulam, Kerala</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Completed hands-on internship in VLSI Design &amp; Verification with exposure to semiconductor design flow</li>
+              <li>Designed and simulated digital circuits using <strong>Verilog HDL</strong> and RTL design methodologies</li>
+              <li>Developed understanding of functional verification concepts, debugging techniques, and digital system design</li>
+              <li>Worked with industry-standard simulation tools and HDL languages (Verilog / VHDL)</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">Verilog</span>
+              <span class="ttag">VHDL</span>
+              <span class="ttag">RTL Design</span>
+              <span class="ttag">VLSI Flow</span>
+              <span class="ttag">Simulation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADD EXPERIENCE BELOW THIS LINE -->
+        <div class="timeline-item add-timeline" data-aos="fade-right">
+          <div class="timeline-dot add-dot">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="timeline-content add-content">
+            <h4>More Experience Coming Soon</h4>
+            <p>This section will be updated with new internships, jobs, and freelance work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Recognition &amp; Awards</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Recognition</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="0" id="ach-kseb">
+          <div class="ach-icon-wrap ach-gold">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <h3>Certificate of Appreciation &mdash; KSEB</h3>
+            <p>Received Certificate of Appreciation from <strong>Kerala State Electricity Board (KSEB)</strong>
+            for developing a Smart Energy Monitoring project using Raspberry Pi and IoT technologies.</p>
+            <span class="ach-year">2024</span>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="100" id="ach-presentation">
+          <div class="ach-icon-wrap ach-blue">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h20v14H2z"></path>
+              <path d="M12 17v4"></path>
+              <path d="M8 21h8"></path>
+              <path d="M16 8l-4 4-4-4"></path>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <h3>Industry Presentation at KSEB</h3>
+            <p>Presented the Smart Energy Guardian using IoT mini project to industry professionals
+            at KSEB, Chengannur. Demonstrated innovative IoT-based energy monitoring solution and
+            received industry recognition.</p>
+            <span class="ach-year">2024</span>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="200" id="ach-patent-ach">
+          <div class="ach-icon-wrap ach-red">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <h3>Patent Application Filed</h3>
+            <p>Successfully filed a patent for the <strong>AI Smart Energy Guardian &mdash; Low-Cost Power
+            Quality Analyzer</strong>. Currently under review. A landmark achievement in innovation
+            and intellectual property.</p>
+            <span class="ach-year">2026</span>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="300" id="ach-vlsi">
+          <div class="ach-icon-wrap ach-purple">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <h3>VLSI Internship Completion</h3>
+            <p>Successfully completed VLSI Design &amp; Verification internship at
+            <strong>SMEC Automation Pvt. Ltd.</strong> gaining industry-level exposure to digital
+            chip design and verification flows.</p>
+            <span class="ach-year">2025</span>
+          </div>
+        </div>
+
+        <!-- UPCOMING ACHIEVEMENTS & MILESTONES -->
+        <div class="achievement-card coming-soon-ach" data-aos="flip-left" data-aos-delay="400" id="ach-add">
+          <div class="ach-icon-wrap ach-gold">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <h3>More Milestones Coming Soon</h3>
+            <p>Actively working towards upcoming research publications, technical certifications, and innovation honors.</p>
+            <span class="ach-year ach-future-pill">⚡ Upcoming Recognitions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERESTS ===== -->
+  <section id="interests" class="section interests-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Beyond Code</span>
+        <h2 class="section-title">Interests &amp; <span class="gradient-text">Passions</span></h2>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="int-icon int-yellow">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 3 L22 15 L34 15 L24 22 L28 34 L18 27 L8 34 L12 22 L2 15 L14 15 Z" fill="#f59e0b" opacity="0.9"/></svg>
+          </div>
+          <h3>Electrical Wiring</h3>
+          <p>Hands-on experience with electrical wiring in residential and commercial setups. Strong practical knowledge of power distribution systems.</p>
+        </div>
+        <div class="interest-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="int-icon int-cyan">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="10" width="28" height="18" rx="3" stroke="#06b6d4" stroke-width="2.5" fill="rgba(6,182,212,0.1)"/><circle cx="18" cy="19" r="4" fill="#06b6d4"/><path d="M12 10 L12 6 M18 10 L18 6 M24 10 L24 6" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Electronics Hardware</h3>
+          <p>Deep passion for designing with electronic circuits, energy metering ICs, embedded modules, and hardware prototyping.</p>
+        </div>
+        <div class="interest-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="int-icon int-purple">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="4" width="28" height="20" rx="3" stroke="#7c3aed" stroke-width="2.5" fill="rgba(124,58,237,0.1)"/><path d="M10 30 L26 30" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/><path d="M18 24 L18 30" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/><path d="M11 14 L16 10 L21 14 L26 10" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Web &amp; App Design</h3>
+          <p>Love crafting beautiful, functional user interfaces. Designed complete frontend for the energy monitoring web dashboard and mobile application.</p>
+        </div>
+        <div class="interest-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="int-icon int-green">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#10b981" stroke-width="2.5" fill="rgba(16,185,129,0.1)"/><path d="M12 18 L16 22 L24 14" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>Exploring ML concepts for load classification and NILM &mdash; applying data science to solve real-world energy monitoring challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Have a project, opportunity, or just want to say hello? I would love to hear from you!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item" id="contact-phone">
+            <div class="contact-icon ci-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918075849523" class="contact-value">+91 8075849523</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-email">
+            <div class="contact-icon ci-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:georgejoseph1239@gmail.com" class="contact-value">georgejoseph1239@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-icon ci-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <span class="contact-label">Hometown</span>
+              <span class="contact-value">Mundakkayam, Kottayam, Kerala</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-college">
+            <div class="contact-icon ci-orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div>
+              <span class="contact-label">College</span>
+              <span class="contact-value">College of Engineering Chengannur, Alappuzha</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-linkedin">
+            <div class="contact-icon ci-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/george-joseph-751377255/" target="_blank" class="contact-value">linkedin.com/in/george-joseph</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-github">
+            <div class="contact-icon ci-dark">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/georgejoseph1239-bot" target="_blank" class="contact-value">github.com/georgejoseph1239-bot</a>
+            </div>
+          </div>
+          
+          <div class="contact-item" id="contact-whatsapp" style="margin-top: 6px; background: rgba(37,211,102,0.06); border-color: rgba(37,211,102,0.25);">
+            <div class="contact-icon" style="background: rgba(37,211,102,0.18); color: #25d366; border: 1px solid rgba(37,211,102,0.4);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.199 4.38 4.542-1.191z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/918075849523?text=Hi%20George,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="contact-value" style="color: #25d366; font-weight: 700;">Chat on WhatsApp (+91 8075849523)</a>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-resume" style="margin-top: 10px; background: rgba(6,182,212,0.05); border-color: rgba(6,182,212,0.15);">
+            <div class="contact-icon" style="background: rgba(6,182,212,0.15); color: #06b6d4; border: 1px solid rgba(6,182,212,0.3);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <div>
+              <span class="contact-label">Resume / CV</span>
+              <a href="resume/George_Joseph_Resume.pdf" target="_blank" class="contact-value" style="color: #06b6d4; font-weight: 600;">View My Resume</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" onsubmit="sendEmailJS(event)">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job Opportunity or Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+
+            <!-- PROMINENT BIGGER GMAIL ACTION BUTTON -->
+            <button type="submit" class="btn btn-gmail-hero full-width" id="sendMessageBtn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052C21.69 2.279 24 3.434 24 5.457z"/>
+              </svg>
+              <span>SEND VIA GMAIL APP / WEB</span>
+            </button>
+
+            <!-- SMALLER SECONDARY WHATSAPP REDIRECT BUTTON -->
+            <div class="whatsapp-redirect-wrap">
+              <a href="https://wa.me/918075849523?text=Hi%20George,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="btn btn-whatsapp-sub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.199 4.38 4.542-1.191z"/>
+                </svg>
+                <span>Or Chat Directly on WhatsApp</span>
+              </a>
+            </div>
+
+            <div class="form-success" id="formSuccess">
+              ✔ Gmail compose window opened with prefilled details!
+            </div>
+            <div class="form-success" id="formError" style="display:none; background:rgba(225,29,72,0.08); border-color:rgba(225,29,72,0.3); color:#f87171;">
+              ✘ Email me directly: georgejoseph1239@gmail.com
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-text">GJ</span><span class="logo-dot"></span></div>
+          <p>George Joseph</p>
+          <small>Embedded Engineer &nbsp;&middot;&nbsp; Frontend Developer &nbsp;&middot;&nbsp; IoT Innovator</small>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#patent">Patent</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/george-joseph-751377255/" target="_blank" class="footer-social" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/georgejoseph1239-bot"       target="_blank" class="footer-social" aria-label="GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:georgejoseph1239@gmail.com"               class="footer-social" aria-label="Email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 George Joseph. All Rights Reserved. Built with passion from Kerala, India</p>
+        <p class="patent-footer-note">Patent Application Filed &mdash; AI Smart Energy Guardian</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

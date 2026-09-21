@@ -1,0 +1,40 @@
+﻿============================================================
+  HOW TO ADD A NEW EXPERIENCE / INTERNSHIP
+============================================================
+
+STEP 1: Open index.html in Notepad
+STEP 2: Press Ctrl+F and search for:  <!-- ADD EXPERIENCE BELOW THIS LINE -->
+STEP 3: Paste this template ABOVE that comment line:
+
+<div class="timeline-item" data-aos="fade-right" id="exp-CHANGE_THIS_ID">
+  <div class="timeline-dot">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+    </svg>
+  </div>
+  <div class="timeline-content">
+    <div class="timeline-header">
+      <h3>YOUR JOB TITLE</h3>
+      <span class="timeline-company">Company Name</span>
+    </div>
+    <div class="timeline-meta">
+      <span class="timeline-date">June 2025 - July 2025</span>
+      <span class="timeline-sep">&nbsp;|&nbsp;</span>
+      <span class="timeline-location">City, State, Kerala</span>
+    </div>
+    <ul class="timeline-points">
+      <li>What you did — accomplishment 1</li>
+      <li>What you did — accomplishment 2</li>
+      <li>What you learned or used</li>
+    </ul>
+    <div class="timeline-tags">
+      <span class="ttag">Skill 1</span>
+      <span class="ttag">Skill 2</span>
+      <span class="ttag">Skill 3</span>
+    </div>
+  </div>
+</div>
+
+NOTE: Change "CHANGE_THIS_ID" to something unique like "exp-google2026"
+============================================================
